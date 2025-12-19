@@ -8,7 +8,7 @@
         description = "The type of instance "
         type        = string
         validation {
-            condition     = contains(["t2.micro", "t3.small", "t3.medium", ], var.instance_type)
+            condition     = contains(["t3.micro", "t3.small", "t3.medium", ], var.instance_type)
             error_message = "Invalid instance type. allowed only t3.micro ,small,medium"
         }
     }
